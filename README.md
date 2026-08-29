@@ -8,8 +8,26 @@
 
 ## ADB Commands of the Menu 
 
-### Query Device Name
-adb shell settings get global device_name
+1. Query Device Name 
+adb shell settings get global device_name 
+
+2. Query Device Model 
+adb shell getprop ro.product.model
+
+3. List Registered Emails
+adb shell dumpsys account
+
+4. 
+List Phone Contacts 
+adb shell content query --uri content://com.android.contacts/data/phones --projection display_name:data1 
+
+5. List Call Logs 
+adb shell content query --uri content://call_log/calls --projection name:number:date:type 
+
+6. List SMS Log
+adb shell content query --uri content://sms --projection address:body:type:date
+
+
 ---
 
 ## Features
@@ -41,6 +59,9 @@ Before running OSINTDROID, ensure you have the following installed and configure
 ## Installation & Setup
 
 1. Clone or download this repository to your host machine:
-   ```bash
+   
    git clone [https://github.com/your-username/osintdroid.git](https://github.com/your-username/osintdroid.git)
    cd osintdroid
+
+Disclaimer
+This tool is created strictly for educational, authorized penetration testing, and digital forensics purposes. Always ensure you have explicit authorization before connecting to and extracting data from a mobile device. 
