@@ -6,20 +6,10 @@
 
 ---
 
-## Table of Contents
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
-- [How It Works](#how-it-works)
-- [ADB Commands Breakdown](#adb-commands-breakdown)
-  - [Prerequisite & Device Initialization Commands](#prerequisite--device-initialization-commands)
-  - [Option 1: List Registered Emails](#option-1-list-registered-emails)
-  - [Option 2: List Phone Contacts](#option-2-list-phone-contacts)
-  - [Option 3: Call Logs](#option-3-call-logs)
-  - [Option 4: SMS Log](#option-4-sms-log)
-- [Usage](#usage)
-- [License](#license)
+## ADB Commands of the Menu 
 
+### Query Device Name
+adb shell settings get global device_name
 ---
 
 ## Features
