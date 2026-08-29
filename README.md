@@ -8,27 +8,27 @@
 
 ## ADB Commands of the Menu 
 
-1. Query Device Name
+1. **Query Device Name**
    
    adb shell settings get global device_name
 
-3. Query Device Model
+3. **Query Device Model**
    
    adb shell getprop ro.product.model
 
-5. List Registered Emails
+5. **List Registered Emails**
    
    adb shell dumpsys account
 
-7. List Phone Contacts
+7. **List Phone Contacts**
    
    adb shell content query --uri content://com.android.contacts/data/phones --projection display_name:data1 
 
-9. List Call Logs
+9. **List Call Logs**
     
     adb shell content query --uri content://call_log/calls --projection name:number:date:type 
 
-11. List SMS Log
+11. **List SMS Log**
     
     adb shell content query --uri content://sms --projection address:body:type:date
 
